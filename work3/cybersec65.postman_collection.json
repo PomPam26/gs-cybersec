@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "70b1662d-7670-4aa2-af0e-0084c3239902",
+		"name": "cybersec65",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23076224"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "MOHuVbw6epKeT2UFSLcxbWwf1qfFx2BquqnxM9AiINAS9e30-rU9f3wy",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "Authorization",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"loginId\": \"demo@demo.com\",\r\n    \"password\": \"khemika2544\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9011/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9011",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImQwY2JhMDQ3YyJ9.eyJleHAiOjE2Nzg0MzE5MzAsImlhdCI6MTY3ODQyODMzMCwiaXNzIjoiYWNtZS5jb20iLCJzdWIiOiI5MDg0ZTU2YS00YzNlLTQ1MWItOTJhMi1lZDU3OTQ1OWE3YTciLCJqdGkiOiJhNWJkYmRhNy01OWUyLTQyNDMtODJlMi05OGRjOWQ4OTgzOGEiLCJhdXRoZW50aWNhdGlvblR5cGUiOiJQQVNTV09SRCIsImVtYWlsIjoiZGVtb0BkZW1vLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkZW1vIiwiYXV0aF90aW1lIjoxNjc4NDI4MzMwLCJ0aWQiOiIyNDBhZTkyYy1kNjgyLTM0ZDAtZmQ2YS1hZjZkMmI2MTRjMWIifQ.5SL7vCSBvTmOk8RadEybJgxHcyofJzTvfrdW6ss0OKE",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "Authorization",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9011/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9011",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
